@@ -17,10 +17,10 @@ Build ontop of:
 - Nunit for testing
 
 ## Solution
-- Tests
-  -- Integration tests (Class Library)
+Tests
+- Integration tests (Class Library)
   Used to house all the integration tests and the boilerplate required
-  -- Test Objects
+- Test Objects
   Contains the object mothers and builders user by the Integration Tests
 - iNomNomAPI
 Contains the project setup and controllers
