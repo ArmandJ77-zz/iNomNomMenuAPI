@@ -22,7 +22,7 @@ namespace iNomNomMenuApi.Controllers
         [ProducesResponseType(typeof(MenuItemDto), 200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        [HttpGet("/{id}")]
+        [HttpGet("{id}")]
         public async Task<MenuItemDto> Get([FromRoute] int id, [FromServices] IGetMenuItemHandler handler)
             => await handler.ExecuteAsync(id);
 
@@ -32,7 +32,7 @@ namespace iNomNomMenuApi.Controllers
         [ProducesResponseType(typeof(List<MenuItemDto>), 200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        [HttpGet("/{pagesize}/{page}")]
+        [HttpGet("{pagesize}/{page}")]
         public async Task<List<MenuItemDto>> Get([FromRoute] int pagesize, [FromRoute] int page, [FromServices] IGetMenuItemListHandler handler)
             => await handler.ExecuteAsync(page, pagesize);
 
@@ -62,7 +62,7 @@ namespace iNomNomMenuApi.Controllers
         [ProducesResponseType(typeof(int), 200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        [HttpDelete("/{id}")]
+        [HttpDelete("{id}")]
         public async Task<int> Put([FromRoute] int id, [FromServices] IDeleteMenuItemHandler handler)
             => await handler.ExecuteAsync(id);
     }

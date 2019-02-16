@@ -22,6 +22,7 @@ namespace TestObjects.ObjectMothers
 
         public MenuItemTest EditMenuItem => new MenuItemTest
         {
+            Id = 1,
             MenuId = 1,
             IsDeleted = false,
             Name = "Edited Menu Item",

@@ -16,7 +16,7 @@ namespace Domain.MenuItems.Handlers
         {
         }
 
-        public async Task<List<MenuItemDto>> ExecuteAsync(int page, int pageSize)
+        public async Task<List<MenuItemDto>> ExecuteAsync(int page = 1, int pageSize = 5)
         {
             var entities = await Context.Items.Skip((page - 1) * pageSize)
                 .Take(pageSize)
