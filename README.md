@@ -1,22 +1,22 @@
 # iNomNomMenuAPI
 
-##Problem Statment
+## Problem Statment
 Demonstrate capabilities to design,implement and test a CRUD RESTFul api.
 
-##Domain
+## Domain
 The api returns results for a lunch menu and whihc contains menu items
 
-##Stack
+## Stack
 Build ontop of:
-> .NetCore 2.2 ans the RESTful framework
-> Entitiy Framework Core used as the ORM
-> Serilog used for logging
-> Swagger used for documentation
-> Fluentvalidation for dto validation
-> Automapper for dto to entity mapping and .ReverseMap()
-> Nunit for testing
+- .NetCore 2.2 ans the RESTful framework
+- Entitiy Framework Core used as the ORM
+- Serilog used for logging
+- Swagger used for documentation
+- Fluentvalidation for dto validation
+- Automapper for dto to entity mapping and .ReverseMap()
+- Nunit for testing
 
-##Solution
+## Solution
 - Tests
   -- Integration tests (Class Library)
   Used to house all the integration tests and the boilerplate required
