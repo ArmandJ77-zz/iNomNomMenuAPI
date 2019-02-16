@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\iNomNomMenuApi\iNomNomMenuApi.csproj" />
     <ProjectReference Include="..\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\TestObjects\TestObjects.csproj" />
   </ItemGroup>
 
 </Project>

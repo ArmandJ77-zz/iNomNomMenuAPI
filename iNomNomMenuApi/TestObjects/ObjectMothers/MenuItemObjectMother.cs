@@ -29,5 +29,25 @@ namespace TestObjects.ObjectMothers
             Price = 5,
             TimeToPrep = 9,
         };
+
+        public static List<MenuItemTest> GetList(int count, int menuId)
+        {
+            var list = new List<MenuItemTest>();
+
+            for (var i = 0; i < count; i++)
+            {
+                list.Add(new MenuItemTest
+                {
+                    MenuId = menuId,
+                    IsDeleted = false,
+                    Name = $"Test menu item {i}",
+                    Description = $"Some test description for menu item {i}",
+                    Price = i *4,
+                    TimeToPrep = i*2,
+                });
+            }
+
+            return list;
+        }
     }
 }
