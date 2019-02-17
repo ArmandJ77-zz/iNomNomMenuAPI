@@ -1,4 +1,5 @@
-﻿using Domain.Infrastructure;
+﻿using Domain.Health.Handlers;
+using Domain.Infrastructure;
 using Domain.Menu.Handlers;
 using Domain.MenuItems.Handlers;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +18,7 @@ namespace iNomNomMenuApi.Infrastructure.ServiceExtensions
             services.AddTransient<IUpdateMenuItemHandler, UpdateMenuItemHandler>();
             services.AddTransient<IGetMenusHandler, GetMenusHandler>();
 
+            services.AddTransient<IHealthCheckHandler, HealthCheckHandler>();
 
             services.AddTransient<IGetMenuItemListHandler, GetMenuItemListHandler>();
             return services;
