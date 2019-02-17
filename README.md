@@ -1,10 +1,10 @@
 # iNomNomMenuAPI
 
-## Problem Statment
+## Problem Statement
 Demonstrate capabilities to design,implement and test a CRUD RESTFul api.
 
 ## Domain
-The api returns results for a lunch menu and whihc contains menu items
+The api returns results for a lunch menu and which contains menu items
 
 ## Stack
 Build ontop of:
