@@ -8,7 +8,7 @@ The api returns results for a lunch menu and whihc contains menu items
 
 ## Stack
 Build ontop of:
-- .NetCore 2.2 ans the RESTful framework
+- .NetCore 2.2 as the RESTful framework
 - Entitiy Framework Core used as the ORM
 - Serilog used for logging
 - Swagger used for documentation
