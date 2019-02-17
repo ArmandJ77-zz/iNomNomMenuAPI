@@ -38,7 +38,7 @@ namespace iNomNomMenuApi
                 option => option.UseSqlServer(Configuration.GetConnectionString("Database"),
                     opt => opt.UseRowNumberForPaging()));
 
-            var appSettingsSection = Configuration.GetSection("AppSettings");
+            //var appSettingsSection = Configuration.GetSection("AppSettings");
 
             services.AddDomain();
             services.AddAutoMapperConfiguration(GetType().GetTypeInfo().Assembly.GetReferencedAssemblies().Select(c => Assembly.Load(c)).ToArray());

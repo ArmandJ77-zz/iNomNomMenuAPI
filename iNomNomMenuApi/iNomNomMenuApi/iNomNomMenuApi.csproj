@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\SourceControl\Git\iNomNom\iNomNomGatewayAPI\iNomNomMenuApi\iNomNomMenuApi\iNomNomMenuApi.xml</DocumentationFile>
+    <DocumentationFile>iNomNomMenuApi.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +31,16 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Repositories\Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="iNomNomMenuApi.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

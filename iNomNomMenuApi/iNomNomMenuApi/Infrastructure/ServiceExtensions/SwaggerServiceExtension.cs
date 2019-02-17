@@ -19,7 +19,6 @@ namespace iNomNomMenuApi.Infrastructure.ServiceExtensions
 
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.XML";
                 var filePath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-
                 c.IncludeXmlComments(filePath);
             });
 

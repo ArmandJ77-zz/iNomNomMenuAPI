@@ -4,6 +4,11 @@
         <name>iNomNomMenuApi</name>
     </assembly>
     <members>
+        <member name="M:iNomNomMenuApi.Controllers.HealthController.Get(Domain.Health.Handlers.IHealthCheckHandler)">
+            <summary>
+            Checks the health of the API
+            </summary>
+        </member>
         <member name="M:iNomNomMenuApi.Controllers.MenuController.Get(Domain.Menu.Handlers.IGetMenusHandler)">
             <summary>
             Gets a list of menus including their menu items
