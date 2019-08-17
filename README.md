@@ -1,3 +1,7 @@
+NOTICE
+======
+This project has been retired. The iNomnom project was part of an interview process and uses a 3rd party api to get data. This project is no longer being maintained and has been archived
+
 # iNomNomMenuAPI
 
 ## Problem Statement
